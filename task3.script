@@ -1,0 +1,212 @@
+console.log(".......task 1.......")
+let age = 22;
+let ID = true;
+let attendance = 80;
+
+if (age >= 18 && ID && attendance >= 75) {
+    console.log("Access Granted");
+} else {
+    console.log("Access Denied");
+}
+
+//task2
+console.log(".......task 2.......")
+let marks = 87;
+
+if (marks >= 90) {
+    console.log("Grade A+");
+} else if (marks >= 80) {
+    console.log("Grade A");
+} else if (marks >= 70) {
+    console.log("Grade B");
+} else if (marks >= 60) {
+    console.log("Grade C");
+} else {
+    console.log("Fail");
+}
+
+//task3
+console.log(".......task 3.......")
+let balance = 5000;
+let withdraw = 3000;
+
+if (withdraw <= balance && withdraw % 100 == 0) {
+    balance = balance - withdraw;
+    console.log("Transaction Successful");
+    console.log("Remaining Balance:", balance);
+} else {
+    console.log("Transaction Failed");
+}
+
+//task4
+console.log(".......task 4.......")
+let choice = 5;
+
+switch (choice) {
+    case 1:
+        console.log("You Ordered Pizza");
+        break;
+    case 2:
+        console.log("You Ordered Burger");
+        break;
+    case 3:
+        console.log("You Ordered Shawarma");
+        break;
+    case 4:
+        console.log("You Ordered Biryani");
+        break;
+    case 5:
+        console.log("You Ordered Juice");
+        break;
+    default:
+        console.log("Invalid Choice");
+}
+
+//task5
+console.log(".......task 5.......")
+let price = 6000;
+let premiumUser = true;
+let discount = 0;
+
+if (price > 5000 && premiumUser) {
+    discount = price * 0.20;
+} else {
+    discount = price * 0.10;
+}
+
+let finalPrice = price - discount;
+
+console.log("Original Price:", price);
+console.log("Discount:", discount);
+console.log("Final Price:", finalPrice);
+
+
+//task6
+console.log(".......task 6.......")
+
+let present=1;
+for(let present=1;present<=30;present++){
+    console.log("Day",present,"present")
+}
+
+//task7
+console.log(".......task 7.......")
+
+for (let n= 2; n <= 100; n += 2) {
+    console.log(n);
+}
+//task8
+console.log(".......task 8.......")
+let mobile = "9632491331";
+
+if (
+    mobile.length === 10 &&
+    (mobile.startsWith("6") ||
+        mobile.startsWith("7") ||
+        mobile.startsWith("8") ||
+        mobile.startsWith("9"))
+) {
+    console.log("Valid Mobile Number");
+} else {
+    console.log("Invalid Mobile Number");
+}
+
+//task9
+console.log(".......task 9.......")
+let cart = ["Milk", "Bread", "Egg", "Rice", "Oil"];
+
+console.log("First Item:", cart[0]);
+console.log("Last Item:", cart[cart.length - 1]);
+console.log("Total Items:", cart.length);
+
+
+//task10
+console.log(".......task 10.......")
+let employee = {
+    name: "Rahul",
+    salary: 45000,
+    department: "Development",
+    experience: 3
+};
+
+console.log("Employee Name:", employee.name);
+console.log("Department:", employee.department);
+console.log("Experience:", employee.experience);
+
+
+//task11
+console.log(".......task 11.......")
+let name = "kedar";
+let id = 333;
+let department = "Development";
+console.log(`Welcome ${name}`);
+console.log(`Your Employee ID is EMP${id}`);
+console.log(`Department : ${department}`);
+
+
+//task12
+console.log(".......task 12.......")
+let name1 = prompt("Enter Your Name");
+let age1 = prompt("Enter Your Age");
+let accept = confirm("Do you accept Terms?");
+
+if (accept) {
+    alert("Registered Successfully");
+} else {
+    alert("Registration Cancelled");
+}
+
+//task13
+console.log(".......task 13.......")
+let salary = 35000;
+let increment = 15;
+
+let incrementAmount = salary * increment / 100;
+let newSalary = salary + incrementAmount;
+
+console.log("Old Salary:", salary);
+console.log("Increment Amount:", incrementAmount);
+console.log("New Salary:", newSalary);
+
+
+//task14
+console.log(".......task 14.......")
+let burger = 150;
+let pizza = 300;
+let juice = 80;
+
+let subtotal = burger + pizza + juice;
+let gst = subtotal * 0.18;
+let grandTotal = subtotal + gst;
+
+console.log("Subtotal:", subtotal);
+console.log("GST:", gst);
+console.log("Grand Total:", grandTotal);
+
+
+
+//task15
+console.log(".......task 15.......")
+let employees = [
+    { name: "Rahul", status: "Present" },
+    { name: "Arun", status: "Absent" },
+    { name: "Kamal", status: "Present" },
+    { name: "Priya", status: "Present" },
+    { name: "Divya", status: "Absent" }
+];
+
+let present1 = 0;
+let absent = 0;
+
+for (let i = 0; i < employees.length; i++) {
+    if (employees[i].status === "Present") {
+        console.log(employees[i].name, "- Present");
+        present++;
+    } else {
+        console.log(employees[i].name, "- Absent");
+        absent++;
+    }
+}
+
+console.log("Total Present:", present);
+console.log("Total Absent:", absent);
